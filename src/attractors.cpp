@@ -11,12 +11,10 @@ double LorenzAttractor::dx() {
     return sigma * (y - x);
 }
 
-
 double LorenzAttractor::dy() {
     return x * (rho - z) - y;
 }
 
-
 double LorenzAttractor::dz() {
     return x*y - beta*z;
-    }
+}
