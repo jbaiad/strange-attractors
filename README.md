@@ -1,5 +1,4 @@
 # Strange Attractors
------------------------
 
 I've always thought that strange attractors were fascinating and beautiful, but
 I never had an opportunity to study them during my undergrad (for some reason
