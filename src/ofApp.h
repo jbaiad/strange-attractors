@@ -6,8 +6,8 @@
 
 class ofApp : public ofBaseApp {
 private:
-    double SCALE = 6;
-    glm::vec2 OFFSET = glm::vec2 { ofGetWidth() * 0.5, ofGetHeight() * 0.3 };
+    glm::mat3x2 TRANSFORM = { {6, 0}, {0, 0}, {0, 6} };
+    glm::vec2 OFFSET = { ofGetWidth() * 0.5, ofGetHeight() * 0.3 };
     
     vector<glm::vec2> points;
     LorenzAttractor attractor {10.0, 28.0, 8.0 / 3.0};

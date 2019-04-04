@@ -9,11 +9,11 @@ void ofApp::setup(){
 
 void ofApp::update(){
     attractor.step();
-    points.push_back(glm::vec2 {attractor.x, attractor.z});
+    points.push_back(TRANSFORM * attractor.position + OFFSET);
 }
 
 void ofApp::draw(){
     for (int i=0; i < static_cast<int>(points.size()); i++) {
-        ofDrawCircle(OFFSET + SCALE * points[i], 0.5);
+        ofDrawCircle(points[i], 0.5);
     }
 }

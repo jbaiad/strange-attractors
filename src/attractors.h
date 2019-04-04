@@ -1,17 +1,19 @@
 #pragma once
+#include "glm/glm.hpp"
 
 
 class AbstractAttractor {
 public:
-    double x{0.1};
-    double y{0.0};
-    double z{0.0};
-    double step_size{0.02};
+    float step_size{0.02};
+    glm::vec3 position{ 0.1, 0.0, 0.0 };
     
+    void step();
+    glm::vec3 tangent();
+    
+private:
     virtual double dx() {};
     virtual double dy() {};
     virtual double dz() {};
-    void step();
 };
 
 

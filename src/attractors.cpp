@@ -1,20 +1,22 @@
 #include "attractors.h"
 
 
+glm::vec3 AbstractAttractor::tangent() {
+    return glm::vec3{ dx(), dy(), dz() };
+}
+
 void AbstractAttractor::step() {
-    x += step_size * dx();
-    y += step_size * dy();
-    z += step_size * dz();
+    position += step_size * tangent();
 }
 
 double LorenzAttractor::dx() {
-    return sigma * (y - x);
+    return sigma * (position.y - position.x);
 }
 
 double LorenzAttractor::dy() {
-    return x * (rho - z) - y;
+    return position.x * (rho - position.z) - position.y;
 }
 
 double LorenzAttractor::dz() {
-    return x*y - beta*z;
+    return position.x*position.y - beta*position.z;
 }
