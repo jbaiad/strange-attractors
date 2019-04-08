@@ -6,4 +6,12 @@ the class on dynamical systems never had enough registered students to justify
 running it). I also always wanted to get more experience with C++ and the
 openFrameworks toolkit, so this seemed like a great side project to exercise
 whatever remains of my math chops while pretending that I'm doing something
-artistic. 
+artistic.
+
+The currently supported attractors are:
+- [Lorenz system](https://en.wikipedia.org/wiki/Lorenz_system)
+- []
+
+## Method
+To approximate the evolution of these attractors, we employ 
+[Euler's method](https://en.wikipedia.org/wiki/Euler_method).
