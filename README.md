@@ -13,5 +13,5 @@ The currently supported attractors are:
 - []
 
 ## Method
-To approximate the evolution of these attractors, we employ 
-[Euler's method](https://en.wikipedia.org/wiki/Euler_method).
+I'm currently using [Euler's method](https://en.wikipedia.org/wiki/Euler_method)
+to approximate the evolution of these attractors.
